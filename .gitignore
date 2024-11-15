@@ -1,0 +1,15 @@
+# Ignore the Terraform working directory
+.terraform/
+
+# Ignore the Terraform plan file
+*.tfplan
+
+# Ignore the Terraform state file
+*.tfstate
+*.tfstate.*
+
+# Ignore the backup of the state file
+*.tfstate.backup
+
+# Do not ignore the lock file
+!.terraform.lock.hcl
