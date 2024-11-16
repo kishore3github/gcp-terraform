@@ -10,7 +10,7 @@ resource "google_compute_instance" "tf-gce" {
   }
 
   network_interface {
-    network = "default"
+    network    = "default"
     subnetwork = "default"
     access_config {
       // This is to assign a public IP
