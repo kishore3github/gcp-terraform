@@ -1,11 +1,3 @@
-# terraform {
-#   backend "gcs" {
-#     bucket  = "my-terraform-backend"
-#     prefix  = "terraform/state"
-#     # project = "sodium-inkwell-441501-j1"
-#   }
-# }
-
 
 # Create a Service Account
 resource "google_service_account" "first-sa" {
