@@ -37,13 +37,14 @@ resource "google_compute_firewall" "allow_ssh" {
   priority = 1000
 
   # Source IP ranges allowed
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["0.0.0.0/0", "34.49.20.125/32"]
 
   # Allowed protocols and ports
   allow {
     protocol = "tcp"
-    ports    = ["22"]
+    ports    = ["22", "80", "443"]
   }
+ 
 }
 
 # Firewall rule: Allow all egress traffic
