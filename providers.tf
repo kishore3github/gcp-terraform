@@ -6,13 +6,13 @@
 
 provider "google" {
   # project = data.google_client_config.current.project
-  region  = "asia-south1"
-  zone    = "asia-south1-a"
+  region      = "asia-south1"
+  zone        = "asia-south1-a"
   credentials = file("C:/Users/kchellab/AppData/Roaming/gcloud/application_default_credentials.json")
 }
 
 data "google_client_config" "current" {
-  
+
 }
 
 locals {
